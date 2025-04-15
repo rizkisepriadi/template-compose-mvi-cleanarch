@@ -1,0 +1,4 @@
+package com.app.template_compose_mvi_cleanarch.data.model
+
+class Greeting {
+}
