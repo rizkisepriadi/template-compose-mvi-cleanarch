@@ -1,7 +1,7 @@
 package com.app.template_compose_mvi_cleanarch.di
 
-import com.app.template_compose_mvi_cleanarch.data.repository.GreetingRepositoryImpl
-import com.app.template_compose_mvi_cleanarch.domain.repository.GreetingRepository
+import com.app.template_compose_mvi_cleanarch.data.GreetingRepository
+import com.app.template_compose_mvi_cleanarch.domain.repository.IGreetingRepository
 import com.app.template_compose_mvi_cleanarch.domain.usecase.GetGreetingUseCase
 import dagger.Module
 import dagger.Provides
@@ -15,13 +15,13 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideGreetingRepository(): GreetingRepository {
-        return GreetingRepositoryImpl()
+    fun provideGreetingRepository(): IGreetingRepository {
+        return GreetingRepository()
     }
 
     @Provides
     @Singleton
-    fun provideGetGreetingUseCase(repository: GreetingRepository): GetGreetingUseCase {
+    fun provideGetGreetingUseCase(repository: IGreetingRepository): GetGreetingUseCase {
         return GetGreetingUseCase(repository)
     }
 }

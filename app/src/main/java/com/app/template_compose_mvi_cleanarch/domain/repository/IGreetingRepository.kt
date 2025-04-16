@@ -1,5 +1,5 @@
 package com.app.template_compose_mvi_cleanarch.domain.repository
 
-interface GreetingRepository {
+interface IGreetingRepository {
     fun getGreeting(): String
 }
