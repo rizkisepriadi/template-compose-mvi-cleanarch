@@ -18,7 +18,7 @@ A modern Android starter template using **Kotlin**, **Jetpack Compose**, **MVI a
 
 1. **Clone this template**
    ```bash
-   git clone https://github.com/your-username/template-compose-mvi-cleanarch.git
+   git clone https://github.com/rizkisepriadi/template-compose-mvi-cleanarch.git
    cd template-compose-mvi-cleanarch
    
 2. **Change module name and package**
