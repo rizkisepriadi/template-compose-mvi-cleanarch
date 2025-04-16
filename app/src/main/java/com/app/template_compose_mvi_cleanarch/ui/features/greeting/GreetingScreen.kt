@@ -1,4 +1,4 @@
-package com.app.template_compose_mvi_cleanarch.presentation.feature.greeting
+package com.app.template_compose_mvi_cleanarch.ui.features.greeting
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
